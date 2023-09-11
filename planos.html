@@ -1,0 +1,187 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <link
+      href="https://fonts.googleapis.com/css?family=Lato:400,400i,700|Playfair+Display+SC:400,700|Playfair+Display:400,700,700i&display=swap"
+      rel="stylesheet"
+    />
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet" />
+    <link rel="stylesheet" href="./css/style.css" />
+    <title>Contratar Plano | Funerária Fênix</title>
+  </head>
+  <body>
+    <header class="headerPlan">
+      <div class="HeaderPage__navbar">
+        <div class="container headerPage__container">
+          <div class="headerPage__logo">
+            <a href="index.html"><img src="images/logo-fenix.svg" alt="Logotipo Funerária Fênix" /></a>
+          </div>
+          <nav class="menu">
+            <ul class="menu__list reset-list">
+              <li class="menu__list__item">
+                <a href="index.html#servicos" class="menu__link">Serviços</a>
+              </li>
+              <li class="menu__list__item">
+                <a href="index.html#planos" class="menu__link">Planos</a>
+              </li>
+              <li class="menu__list__item">
+                <a href="index.html#contato" class="menu__link">Contato</a>
+              </li>
+            </ul>
+          </nav>
+        </div>
+      </div>
+
+      <div class="container">
+        <div class="blockPlan">
+          <h1
+            class="blockIntro__title line--bigger space-stack-m"
+            data-aos="fade-down"
+            data-aos-easing="ease"
+            data-aos-duration="800"
+          >
+          Contratar Plano
+          </h1>
+          </div>
+        </div>
+      </div>
+    </header>
+
+    <div class="container space-between bigger-section">
+        <!-- formulário -->
+        <div class="formSingup">
+          <form>
+            <label for="nome" class="type-color-1">Nome:</label>
+          <input
+            class="form__component--dark space-stack-m"
+            type="text"
+            placeholder="Insira seu nome"
+            id="nome"
+          />
+          <label for="email" class="type-color-1">E-mail:</label>
+          <input
+            class="form__component--dark space-stack-m"
+            type="email"
+            placeholder="Digite seu e-mail"
+            id="email"
+          />
+          <label for="tel" class="type-color-1">Telefone:</label>
+          <input
+            class="form__component--dark space-stack-m"
+            type="tel"
+            placeholder="Digite seu telefone"
+            id="tel"
+          />
+
+          <div class="metade space-inline-l space-stack-m">
+            <label for="endereco" class="type-color-1">Endereço:</label>
+            <input
+              class="form__component--dark"
+              type="andress"
+              placeholder="Digite seu endereço"
+              id="endereco"
+            />
+          </div>
+
+         <div class="metade space-stack-m">
+          <label for="estado" class="type-color-1">Estado:</label>
+          <select class="form__component--dark">
+            <option value="RJ">RJ</option>
+            <option value="MG">MG</option>
+            <option value="SP">SP</option>
+          </select>
+         </div>
+
+          <div class="metade metade space-inline-l space-stack-m">
+            <label for="cep" class="type-color-1">CEP:</label>
+            <input class="form__component--dark" type="text" placeholder="Digite seu CEP" id="cep">
+          </div>
+
+          <div class="metade space-stack-m">
+            <label for="cidade" class="type-color-1">Cidade:</label>
+            <input class="form__component--dark" type="text" placeholder="Digite sua cidade" id="cidade">
+          </div>
+
+          <button type="submit" class="btn btn--primary">Solicitar Plano</button>
+          </form>
+        </div>
+
+        <!-- Planos -->
+        <section class="seleclPlan shadow-element">
+          <header class="selectPlan__buttons">
+            <span class="type-color-1 d-block space-stack-m">Plano Selecionado:</span>
+            <div class="selectPlan__checkbox">
+             <label> <input type="radio" name="plano" value="necessidade"><span>Necessidade</span></label>
+             <label> <input type="radio" name="plano" value="cortesia"><span>Cortesia</span></label>
+            </div>
+          </header>
+
+          <div class="plansContainer">
+            <article class="plans__features">
+              <header class="plans__features__head r-card-l text-center">
+                <h3>Necessidade</h3>
+              </header>
+              <ul class="plans__list r-card-l">
+                <li>Enterro</li>
+                <li>Cremação</li>
+                <li>Translado</li>
+                <li>Até 2 pessoas</li>
+                <li>Desconto em serviços</li>
+              </ul>
+              <div class="plans__action r-card-l">
+                <h4 class="text-center">
+                  R$ <span class="text-color-base">34,80</span>/mês
+                </h4>
+              </div>
+            </article>
+  
+            <article class="plans__features">
+              <header class="plans__features__head r-card-l text-center">
+                <h3>Cortesia</h3>
+              </header>
+              <ul class="plans__list r-card-l">
+                <li>Enterro</li>
+                <li>Cremação</li>
+                <li>Translado</li>
+                <li>Até 5 pessoas</li>
+                <li>Desconto em serviços</li>
+              </ul>
+              <div class="plans__action r-card-l">
+                <h4 class="text-center">
+                  R$ <span class="text-color-base">45,80</span>/mês
+                </h4>
+              </div>
+            </article>
+          </div>
+        </section>
+    </div>
+
+
+    <!-- Footer -->
+    <footer class="footer default-section">
+      <div class="container">
+        <div class="footer__content">
+          <img
+            src="./images/logo-fenix-footer.svg"
+            alt="Funerária Fênix Logotipo"
+          />
+          <p>
+            Este é um site fictício crido com a intençã de fazer parte do
+            portfólio de Liliana Costa. Nenhum recurso funciona de forma
+            real.
+          </p>
+        </div>
+      </div>
+    </footer>
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script>
+      window.addEventListener("load", function () {
+        AOS.init();
+      });
+    </script>
+    <script src="js/main.js"></script>
+  </body>
+</html>

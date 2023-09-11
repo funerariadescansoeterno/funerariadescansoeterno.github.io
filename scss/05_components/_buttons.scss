@@ -1,0 +1,44 @@
+button.btn,
+input[type="button"].btn,
+input[type="submit"].btn,
+input[type="reset"].btn,
+a.btn {
+  border: none;
+  letter-spacing: 0.2rem;
+  text-transform: uppercase;
+  font-weight: bold;
+}
+
+.btn--bg__color {
+  background-color: $base-color;
+  color: $white-color;
+  box-shadow: 7px 7px 0 -2px $variation-2, 7px 7px 0 0 $base-color;
+  transition: all 0.3s ease-out;
+  &:hover {
+    box-shadow: 4px 4px 0 -2px $variation-2, 4px 4px 0 0 $base-color;
+  }
+}
+
+a.btn--bg__color:visited,
+a.btn--bg__color:hover {
+  color: $white-color;
+}
+
+.btn--primary {
+  background-color: $accent-color;
+  color: $white-color;
+  box-shadow: 7px 7px 0 -2px $white-color, 7px 7px 0 0 $base-color;
+  transition: all 0.3s ease-out;
+
+  &:hover {
+    box-shadow: 4px 4px 0 -2px $white-color, 4px 4px 0 0 $base-color;
+    color: $white-color;
+  }
+}
+
+a.btn--primary {
+  &:visited,
+  &:hover {
+    color: $white-color;
+  }
+}

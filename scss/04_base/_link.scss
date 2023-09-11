@@ -1,0 +1,12 @@
+a {
+    color: $accent-color;
+}
+
+a:hover,
+a:focus {
+    color: $variation-2;
+}
+
+a:visited {
+    color: $base-color;
+}

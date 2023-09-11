@@ -1,0 +1,29 @@
+.line--bigger {
+    &::after {
+        content: "";
+        display: block;
+        width: 634px;
+        height: 1px;
+        background-color: $base-color;
+        margin-top: $space-m;
+    }
+}
+
+.line::after {
+    content: "";
+    display: block;
+    width: 404px;
+    height: 1px;
+    background-color: $base-color;
+    margin-top: $space-m;
+}
+
+@media(max-width: $bp-2){
+    .line--bigger::after{
+        width: 80%;
+    }
+
+    .line::after {
+        width: 60%;
+    }
+}

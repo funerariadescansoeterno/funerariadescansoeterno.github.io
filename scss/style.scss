@@ -1,0 +1,514 @@
+@import "01_settings/settings";
+@import "02_tools/tools";
+@import "03_generic/generic";
+@import "04_base/base";
+@import "05_components/components";
+@import "06_helpers/helpers";
+
+// ----------
+
+// Header
+.headerPage {
+  height: 793px;
+  background: linear-gradient(
+      180deg,
+      rgba(73, 73, 73, 0.9) 0%,
+      rgba(70, 60, 25, 0.35) 100%
+    ),
+    url("../images/intro-bg.jpg");
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+}
+
+@media (max-width: $bp-2) {
+  .headerPage {
+    height: 980px;
+  }
+}
+
+@media (max-width: 320px) {
+  .headerPage {
+    height: 1050px;
+  }
+}
+
+// Intro {
+.blockIntro {
+  color: $white-color;
+  margin-top: 170px;
+  & h1 {
+    color: $white-color;
+  }
+}
+
+@media (max-width: $bp-2) {
+  .blockIntro {
+    margin-top: 110px;
+  }
+}
+
+.blockIntro__text {
+  margin-top: 0;
+}
+
+@media (min-width: $bp-2) {
+  .blockIntro {
+    @include gridItemSize(10);
+  }
+}
+
+// Contato e funcionamento
+.infoBar {
+  background-color: $variation-1;
+}
+
+.infoBar__list {
+  display: flex;
+  flex-wrap: wrap;
+}
+.infoBar__list__item {
+  margin-bottom: 0;
+  display: flex;
+  align-items: center;
+  & img {
+    margin-right: $space-l;
+  }
+}
+
+@media (max-width: $bp-2) {
+  .infoBar__list__item:first-child {
+    padding-bottom: $space-l;
+  }
+
+  .infoBar__list__item:nth-child(2) {
+    border-top: 1px solid $base-color;
+    padding-top: $space-l;
+  }
+}
+
+@media (min-width: $bp-2) {
+  .infoBar__list__item {
+    padding: 0 $space-l;
+  }
+
+  .infoBar__container {
+    justify-content: center;
+  }
+
+  .infoBar__list__item:first-child {
+    border-right: 1px solid $base-color;
+  }
+}
+
+// Resumo Sobre
+.summary__image {
+  @include spaceStack($space-l);
+}
+
+.summary__text:nth-child(3) {
+  margin-bottom: 0;
+}
+
+.summary__list__item {
+  padding: $space-l 0;
+  margin: 0;
+  display: flex;
+  align-items: center;
+  &:first-child {
+    border-bottom: 1px solid $support-color-3;
+  }
+
+  & img {
+    @include spaceInline($space-s);
+  }
+}
+
+@media (min-width: $bp-2) {
+  .summary__image,
+  .summary__content {
+    @include gridItemSize(6);
+  }
+
+  .summary__image {
+    margin-bottom: 0;
+  }
+}
+
+// Serviços
+.services {
+  padding-bottom: $space-xxl;
+}
+
+.services__desc__head {
+  border-bottom: 3px solid $accent-color;
+}
+
+.services__desc__text {
+  margin: 0;
+}
+
+.services__desc {
+  border: 3px solid $accent-color;
+  @include spaceStack($space-l);
+}
+
+.quote {
+  display: flex;
+  position: relative;
+  & img {
+    position: absolute;
+    top: -74px;
+  }
+}
+
+@media (max-width: $bp-2) {
+  .quote img {
+    right: 30px;
+  }
+}
+
+@media (min-width: $bp-2) {
+  .services__header {
+    @include gridItemSize(12);
+  }
+  .services__desc {
+    @include gridItemSize(6);
+  }
+}
+
+@media (min-width: $bp-3) {
+  .services__desc {
+    @include gridItemSize(3);
+    margin-bottom: 0;
+  }
+}
+// Depoimentos
+.depositions__people {
+  @include spaceStack($space-xl);
+}
+
+@media (min-width: $bp-2) {
+  .depositions__header {
+    @include gridItemSize(12);
+  }
+  .depositions__people {
+    @include gridItemSize(6);
+    margin-bottom: 0;
+  }
+}
+
+// Planos
+.plans__header {
+  @include spaceStack($space-xl);
+}
+
+.plans__features {
+  border: 3px solid $accent-color;
+  @include spaceStack($space-l);
+}
+
+.plans__features__head,
+.plans__list {
+  border-bottom: 3px solid $accent-color;
+}
+
+.plans__list {
+  color: $type-color-1;
+  list-style-position: inside;
+  list-style: none;
+  & li::before {
+    content: "";
+    display: inline-block;
+    margin-bottom: 5px;
+    margin-right: 8px;
+    width: 15px;
+    height: 1px;
+    background-color: $base-color;
+  }
+}
+
+.plans__action {
+  display: flex;
+  flex-direction: column;
+}
+
+@media (min-width: $bp-2) {
+  .plans__header {
+    @include gridItemSize(12);
+  }
+  .plans__features {
+    @include gridItemSize(6);
+    margin-bottom: 0;
+  }
+}
+
+@media (min-width: $bp-3) {
+  .plans__header {
+    margin-bottom: 0;
+  }
+
+  .plans__header .line::after {
+    width: 300px;
+  }
+
+  .plans__header,
+  .plans__features {
+    @include gridItemSize(4);
+  }
+}
+
+// Mapa
+.contact__form {
+  padding: $space-l;
+  background-color: $variation-3;
+}
+
+.map {
+  & iframe {
+    width: 100%;
+    height: 682px;
+  }
+}
+
+@media (min-width: 768px) {
+  .map__contact {
+    width: calc(((100% * 12) / 12) - 30px);
+    margin-left: 30px;
+    margin-right: 30px;
+  }
+
+  .map {
+    width: calc(((100% * 7) / 12) - 30px);
+    margin-left: 15px;
+    margin-right: 15px;
+  }
+
+  .contact__form {
+    width: calc(((100% * 5) / 12) - 30px);
+    margin-left: 15px;
+    margin-right: 15px;
+  }
+}
+
+// Footers
+.footer {
+  background-color: $variation-1;
+  height: 100%;
+  position: relative;
+  margin-top: -7px;
+}
+
+.conatiner-inner {
+  position: relative;
+}
+
+.footer__contact {
+  top: -290px;
+  right: 15px;
+}
+
+@media (max-width: $bp-3) {
+  .footer__contact {
+    order: 0;
+    @include spaceStack($space-xl);
+  }
+
+  .footer__content {
+    order: 1;
+  }
+}
+
+@media (min-width: $bp-2) {
+  .footer__content,
+  .footer__contact {
+    @include gridItemSize(6);
+  }
+
+  .footer__content {
+    align-self: center;
+  }
+}
+
+.footer__contact {
+  background-color: $variation-3;
+}
+
+.footer__form {
+  display: flex;
+  flex-direction: column;
+}
+
+//----------- Planos
+.headerPlan {
+  height: 400px;
+  background: linear-gradient(
+      180deg,
+      rgba(73, 73, 73, 0.9) 0%,
+      rgba(70, 60, 25, 0.35) 100%
+    ),
+    url(../images/plano-bg.jpg);
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+}
+
+.blockPlan {
+  padding-top: $space-xl;
+  padding-bottom: $space-xl;
+  color: white;
+
+  & h1 {
+    color: white;
+  }
+}
+//Formulário
+.formSingup {
+  & form {
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+    & input,
+    & select {
+      width: 100%;
+      display: block;
+    }
+  }
+}
+
+@media (min-width: 768px) {
+  .formSingup {
+    width: calc(((100% * 5) / 12) - 30px);
+    margin-left: 30px;
+    margin-right: 30px;
+
+    & .metade {
+      width: calc(50% - 16px);
+    }
+  }
+}
+
+@media (max-width: 767px) {
+  .formSingup {
+    order: 1;
+    margin-top: $space-xl;
+  }
+
+  .seleclPlan {
+    order: 0;
+  }
+}
+//-----------
+.contact__title .line::after {
+  width: 100% !important;
+}
+
+.space-inline-l {
+  margin-right: $space-l;
+}
+
+// Componente
+.seleclPlan {
+  background-color: $variation-3;
+  padding: $space-l;
+
+  & .plansContainer {
+    position: relative;
+    overflow: hidden;
+  }
+
+  & .plans__features {
+    opacity: 0;
+    transform: translate3d(50px, 0, 0);
+    transition: all 0.4s;
+    position: absolute;
+    width: 100%;
+    margin-left: 0;
+    margin-right: 0;
+    margin-top: $space-l;
+    background-color: #fff;
+    &.visible {
+      transform: translate3d(0, 0, 0);
+      opacity: 1;
+      position: static;
+    }
+  }
+}
+
+.selectPlan__checkbox {
+  display: flex;
+  width: 100%;
+  border: 3px solid $accent-color;
+
+  // Custom radioButton
+  & label {
+    color: $type-color-1;
+    background-color: #fff;
+    padding: $space-m;
+    width: 50%;
+    border-right: 3px solid $accent-color;
+    display: flex;
+    cursor: pointer;
+    font-weight: 500;
+    position: relative;
+    overflow: hidden;
+
+    &.selected {
+      background-color: $accent-color;
+      color: #fff;
+    }
+    &:last-child {
+      border-right: 0;
+    }
+  }
+
+  & input[type="radio"] {
+    position: absolute;
+    left: -9999px;
+    &:checked + span {
+      // background-color: mix(#fff, $base-color, 84%);
+      &:before {
+        box-shadow: inset 0 0 0 0.4375em $base-color;
+      }
+    }
+  }
+
+  & span {
+    display: flex;
+    align-items: center;
+    &:before {
+      display: flex;
+      flex-shrink: 0;
+      content: "";
+      background-color: #fff;
+      width: 1.5em;
+      height: 1.5em;
+      border-radius: 50%;
+      margin-right: 0.375em;
+      transition: 0.25s ease;
+      box-shadow: inset 0 0 0 0.125em $base-color;
+    }
+  }
+}
+
+@media (min-width: 768px) {
+  .seleclPlan {
+    width: calc(((100% * 5) / 12) - 30px);
+    margin-left: 15px;
+    margin-right: 15px;
+  }
+}
+
+// -------------
+
+.d-block {
+  display: block;
+}
+
+.space-between {
+  justify-content: space-between;
+}
+
+.shadow-element {
+  box-shadow: 20px 20px 0 -5px $accent-color;
+}

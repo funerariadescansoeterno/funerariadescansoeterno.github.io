@@ -1,0 +1,5 @@
+@mixin gridItemSize($size){
+     width: calc(((100% * #{$size})/#{$columns-number}) - #{convertToRem($grid-gutter)});
+     margin-left: calc(#{convertToRem($grid-gutter)} / 2);
+     margin-right: calc(#{convertToRem($grid-gutter)} / 2);
+}

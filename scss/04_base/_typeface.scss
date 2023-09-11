@@ -1,0 +1,58 @@
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+    color: $type-color-1;
+    font-weight: 700;
+    line-height: $title-lh;
+    font-family: $typeface-1;
+    font-style: italic;
+}
+
+h1 {
+    font-size: convertToRem($size-title-1);
+}
+
+h2 {
+    font-size: convertToRem($size-title-2);
+}
+
+h3 {
+    font-size: convertToRem($size-title-3);
+}
+
+h4 {
+    font-size: convertToRem($size-title-4);
+}
+
+h5 {
+    font-size: convertToRem($size-title-5);
+}
+
+h6 {
+    font-size: convertToRem($size-title-6);
+}
+p {
+    margin-top: $space-l;
+    margin-bottom: $space-l;
+}
+
+b,
+strong {
+    font-weight: 700;
+}
+
+u {
+    text-decoration: underline;
+}
+
+i,
+em {
+    font-style: italic;
+}
+
+mark {
+    background-color: #fbff00;
+}

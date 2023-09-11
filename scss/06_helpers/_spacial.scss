@@ -1,0 +1,23 @@
+.space-stack-xs {
+    @include spaceStack($space-xs);
+}
+
+.space-stack-s {
+    @include spaceStack($space-s);
+}
+
+.space-stack-m {
+    @include spaceStack($space-m);
+}
+
+.space-stack-l {
+    @include spaceStack($space-l);
+}
+
+.space-stack-xl {
+    @include spaceStack($space-xl);
+}
+
+.space-stack-xxl {
+    @include spaceStack($space-xxl);
+}

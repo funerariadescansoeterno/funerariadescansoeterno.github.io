@@ -1,0 +1,21 @@
+// Espaçamento de seção
+.bigger-section {
+    padding-top: $space-xxl;
+    padding-bottom: $space-xxl;
+}
+
+.default-section {
+    padding-top: $space-xl;
+    padding-bottom: $space-xl;
+}
+
+.small-section {
+    padding-top: $space-l;
+    padding-bottom: $space-l;
+}
+
+// Imagem Responsiva
+
+.u-width-100 {
+    max-width: 100%;
+}

@@ -1,0 +1,10 @@
+table {
+    border-collapse: collapse;
+}
+
+th,
+td {
+    @include insertStretch($space-s);
+    text-align: left;
+    border-bottom: 1px solid $support-color-1;
+}

@@ -1,0 +1,19 @@
+.container {
+    $margin-container: $grid-gutter / 2;
+    display: flex;
+    flex-flow: column nowrap;
+    max-width: $container-w;
+    padding-left: convertToRem($margin-container);
+    padding-right: convertToRem($margin-container);
+}
+
+@media (min-width: $bp-2){
+    .container {
+        flex-flow: row wrap;
+        margin-left: auto;
+        margin-right: auto;
+        padding-left: 0;
+        padding-right: 0;
+        // width: 80%;
+    }
+}

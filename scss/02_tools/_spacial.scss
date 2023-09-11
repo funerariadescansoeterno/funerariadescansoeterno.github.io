@@ -1,0 +1,37 @@
+// Dividir Valores
+@function theHalf($op, $value){
+    $half: 0;
+    @if($op == 'metade'){
+        $half: $value / 2;
+    }@else if($op == 'soma'){
+        $half: $value + ($value / 2);
+    }
+
+    @return $half;
+}
+
+// Espaçamento Uniforme
+@mixin spaceInsert($value) {
+    padding: $value;
+}
+
+// Espaçamento Botão
+@mixin insertSquish($value){
+    padding: theHalf('metade', $value) $value;
+}
+
+// Espaçamenro Formulário
+@mixin insertStretch($value) {
+    padding: theHalf('soma', $value) $value;
+}
+
+// Espaçamento inferior
+@mixin spaceStack($value){
+    margin-bottom: $value;
+}
+
+// Espaçmento Lateral
+
+@mixin spaceInline($value){
+    margin-right: $value;
+}

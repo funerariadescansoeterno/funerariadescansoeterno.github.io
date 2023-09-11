@@ -1,0 +1,29 @@
+input[type="text"],
+input[type="email"],
+input[type="number"],
+input[type="search"],
+input[type="tel"],
+input[type="url"],
+input[type="password"],
+input[type="andress"],
+textarea,
+select {
+  &.form__component {
+    background-color: $white-color;
+    border: 1px solid $accent-color;
+    transition: all 0.3s ease-out;
+
+    &:focus {
+      border-color: $base-color;
+    }
+  }
+
+  &.form__component--dark {
+    background-color: $variation-1;
+    border: 1px solid $variation-4;
+    &::placeholder {
+      font-size: 14px;
+      color: $variation-4;
+    }
+  }
+}

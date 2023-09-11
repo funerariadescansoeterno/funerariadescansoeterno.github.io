@@ -1,0 +1,19 @@
+.image--shadow {
+    box-shadow:  10px 10px 0 -5px $base-color;
+}
+
+@media(min-width: $bp-3) {
+    .image--shadow {
+        box-shadow:  20px 20px 0 -5px $base-color;
+    }
+}
+
+.element--shadow {
+    box-shadow:  10px 10px 0 -5px $accent-color;
+}
+
+@media(min-width: $bp-2){
+    .element--shadow {
+        box-shadow:  20px 20px 0 -5px $accent-color;
+    }
+}

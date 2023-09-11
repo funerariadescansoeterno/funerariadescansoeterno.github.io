@@ -1,0 +1,32 @@
+.HeaderPage__navbar {
+    padding: $space-m 0;
+}
+
+.headerPage__container {
+    justify-content: space-between;
+    align-items: center;;
+}
+
+.menu__list {
+    display: flex;
+    justify-content: flex-end;
+}
+
+.menu__list__item {
+    margin: 0 $space-s;
+}
+
+.menu__link {
+    padding: $space-s;
+    color: $base-color;
+}
+
+@media(min-width: $bp-2){
+    .menu {
+        @include gridItemSize(5);
+    }
+
+    .headerPage__logo {
+        @include gridItemSize(4);
+    }
+}

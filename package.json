@@ -1,0 +1,10 @@
+{
+  "name": "fenix",
+  "version": "1.0.0",
+  "main": "index.js",
+  "repository": "https://github.com/21liliana/fenix-site.git",
+  "license": "MIT",
+  "dependencies": {
+    "@babel/cli": "^7.10.3"
+  }
+}

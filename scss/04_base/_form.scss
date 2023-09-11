@@ -1,0 +1,37 @@
+input[type="text"],
+input[type="email"],
+input[type="number"],
+input[type="search"],
+input[type="tel"],
+input[type="url"],
+input[type="password"],
+input[type="andress"],
+textarea,
+select {
+  @include insertStretch($space-s);
+  border: 1px solid $support-color-2;
+  box-shadow: none;
+  font: inherit;
+}
+
+input[type="text"]:focus,
+input[type="email"]:focus,
+input[type="number"]:focus,
+input[type="search"]:focus,
+input[type="tel"]:focus,
+input[type="url"]:focus,
+input[type="password"]:focus,
+input[type="andress"],
+textarea:focus,
+select:focus {
+  border: 1px solid $support-color-3;
+  outline: 0;
+}
+
+textarea {
+  min-height: $space-xl;
+}
+
+label {
+  display: block;
+}

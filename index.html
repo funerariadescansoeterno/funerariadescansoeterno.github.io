@@ -1,0 +1,488 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+  <link rel="shortcut icon" href="./images/caixaofavicon.png" type="image/x-icon">
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+  <link
+    href="https://fonts.googleapis.com/css?family=Lato:400,400i,700|Playfair+Display+SC:400,700|Playfair+Display:400,700,700i&display=swap"
+    rel="stylesheet" />
+  <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet" />
+  <link rel="stylesheet" href="./css/style.css" />
+  <title>Funerária Descanso Eterno</title>
+</head>
+
+<body>
+
+  <script defer>
+
+    document.addEventListener("DOMContentLoaded", function () {
+      // Array de objetos com informações das imagens
+      const imagensComDescricao = [
+        {
+          src: './images/caixoes/01Trindade.jpg',
+          descricao: 'Modelo Trindade'
+        },
+        {
+          src: './images/caixoes/02vintage.jpg',
+          descricao: 'Modelo Vintage'
+        },
+        {
+          src: './images/caixoes/03135.jpg',
+          descricao: 'Modelo 135'
+        },
+        {
+          src: './images/caixoes/0425.jpg',
+          descricao: 'Modelo 25'
+        },
+        {
+          src: './images/caixoes/05lisa.jpg',
+          descricao: 'Modelo Lisa'
+        },
+        {
+          src: './images/caixoes/0645.jpg',
+          descricao: 'Modelo 45'
+        },
+        {
+          src: './images/caixoes/07108.jpg',
+          descricao: 'Modelo 108'
+        },
+        {
+          src: './images/caixoes/083000.jpg',
+          descricao: 'Modelo 3000'
+        },
+        {
+          src: './images/caixoes/09cerejeira.jpg',
+          descricao: 'Modelo Cerejeira'
+        },
+        {
+          src: './images/caixoes/10biblia.jpg',
+          descricao: 'Modelo Biblia'
+        },
+        {
+          src: './images/caixoes/11801.jpg',
+          descricao: 'Modelo 801'
+        },
+        {
+          src: './images/caixoes/12pomba.jpg',
+          descricao: 'Modelo Pomba'
+        },
+        {
+          src: './images/caixoes/13rs.jpg',
+          descricao: 'Modelo RS'
+        },
+        {
+          src: './images/caixoes/1413.jpg',
+          descricao: 'Modelo 13'
+        },
+        {
+          src: './images/caixoes/1537f.jpg',
+          descricao: 'Modelo 37f'
+        },
+        {
+          src: './images/caixoes/16rs2.jpg',
+          descricao: 'Modelo RS02'
+        },
+        {
+          src: './images/caixoes/172077.jpg',
+          descricao: 'Modelo 2077'
+        },
+        {
+          src: './images/caixoes/18branca.jpg',
+          descricao: 'Modelo Branca'
+        }
+      ];
+
+      // Obtém a referência ao elemento de container
+      const container = document.getElementById('containerCaixoes');
+
+      // Use o método map para criar um novo array de elementos HTML
+      const elementosHTML = imagensComDescricao.map((imagemInfo, index) => {
+
+        const divImgs = document.createElement('div');
+        divImgs.classList.add('divImgs');
+
+
+        const img = document.createElement('img');
+        img.src = imagemInfo.src;
+        img.alt = imagemInfo.descricao;
+
+        const h3 = document.createElement('h3');
+        h3.textContent = imagemInfo.descricao;
+
+        // Define o ID para o elemento <img> igual ao índice
+        img.id = `imagem_${index}`;
+
+        // Adicione uma classe à tag <img>
+        img.classList.add('ImgCaixoes'); // Substitua 'classe-da-imagem' pela sua classe desejada
+
+        const button = document.createElement('button');
+        button.textContent = 'Orcamento'; // Texto do botão
+
+        // Adicione um evento de clique ao botão
+        button.addEventListener('click', function () {
+          // Redireciona para o link URL desejado
+          window.location.href = 'https://verdao.net'; // Substitua 'https://www.seulink.com' pelo URL desejado
+        });
+
+
+        // Definir uma classe para o botão, se necessário
+        button.classList.add('buttonOrcamento');
+
+        divImgs.appendChild(img);
+        divImgs.appendChild(h3);
+        divImgs.appendChild(button);
+
+        return divImgs;
+      });
+
+      // Adicione os elementos HTML ao container
+      elementosHTML.forEach(elemento => {
+        container.appendChild(elemento);
+      });
+    });
+  </script>
+</body>
+
+</html>
+
+
+
+
+
+
+</script>
+
+
+<header class="headerPage">
+  <div class="HeaderPage__navbar">
+    <div class="container headerPage__container">
+      <div class="headerPage__logo">
+        <a href="index.html"><img style="border: 1px solid gold;" src="./images/logodescansoeterno-removebg-preview.png"
+            alt="Logotipo Funerária Fênix" /></a>
+      </div>
+      <nav class="menu">
+        <ul class="menu__list reset-list">
+          <li class="menu__list__item">
+            <a href="#servicos" class="menu__link">Serviços</a>
+          </li>
+          <li class="menu__list__item">
+            <a href="#planos" class="menu__link">Planos</a>
+          </li>
+          <li class="menu__list__item">
+            <a href="#contato" class="menu__link">Contato</a>
+          </li>
+        </ul>
+      </nav>
+    </div>
+  </div>
+
+  <div class="container">
+    <div class="blockIntro">
+      <h1 class="blockIntro__title line--bigger space-stack-m" data-aos="fade-down" data-aos-easing="ease"
+        data-aos-duration="800">
+        O suporte que você precisa nas horas mais difíceis
+      </h1>
+      <p class="blockIntro__text space-stack-xl" data-aos="fade-down" data-aos-easing="ease" data-aos-duration="800"
+        data-aos-delay="200">
+        Tenha o suporte adequado nas horas em que você mais precisa. Com a funerária Descanso Eterno, você tem o
+        melhor atendimento.
+      </p>
+      <div data-aos="zoom-in" data-aos-easing="ease" data-aos-duration="800" data-aos-delay="400"
+        style="display: flex; flex-direction: column;">
+        <a style="margin: 8px;" href="#planos" class="btn btn--bg__color">Escolha um Plano</a>
+        <a style="margin: 8px;" href="#caixoes" class="btn btn--bg__color">Compre Um Caixao</a>
+      </div>
+    </div>
+  </div>
+</header>
+
+<!-- Informações de contato -->
+<section class="infoBar default-section">
+  <div class="container infoBar__container">
+    <ul class="infoBar__list reset-list" data-anime="top">
+      <li class="infoBar__list__item">
+        <img src="images/icon-phone.svg" alt="Ícone Telefone" />
+        <div class="infoBar__list__text">
+          <h3 class="space-stack-s">Tel: (21) 3333-6666</h3>
+          <span>Atendimento 24h</span>
+        </div>
+      </li>
+
+      <li class="infoBar__list__item">
+        <img src="images/icon-leaf.svg" alt="Ícone Folha" />
+        <div class="infoBar__list__text">
+          <h3 class="space-stack-s">Envie Flores</h3>
+          <span>Envie uma coroa de flores</span>
+        </div>
+      </li>
+    </ul>
+  </div>
+</section>
+
+<!-- Resumo Sobre -->
+<section class="summary bigger-section">
+  <div class="container">
+    <div class="summary__image">
+      <img src="images/image-cova.jpg" alt="Sepultura" class="image--shadow" />
+    </div>
+    <article class="summary__content">
+      <header class="space-stack-m" data-aos="fade-down" data-aos-easing="ease" data-aos-duration="800">
+        <h2 class="line">
+          <span class="text-color-base"> Cremação e enterro </span> De forma descoplicada
+        </h2>
+      </header>
+      <p class="summary__text" data-aos="fade-down" data-aos-easing="ease" data-aos-duration="800" data-aos-delay="200">
+        Fique livre de preocupações relacionadas ao faleciomento de um ente querido.
+        Aderindo a um de nossos planos, você terá toda a assistência
+        necessária nas horas mais difíceis e sem preocupações futuras.
+      </p>
+      <p class="summary__text" data-aos="fade-down" data-aos-easing="ease" data-aos-duration="800" data-aos-delay="400">
+        Com mais de 15 anos no mercado, somos o serviço funeráio mais querido
+        por nossos clientes. Atendemos 24h por dia em qualquer lugar do Brasil.
+      </p>
+      <ul class="summary__list reset-list">
+        <li class="summary__list__item" data-aos="fade-right" data-aos-easing="ease" data-aos-duration="800"
+          data-aos-delay="600">
+          <img src="images/icon-coffin.svg" alt="Ataúde" />
+          <h3>Atendimento Vip</h3>
+        </li>
+        <li class="summary__list__item" data-aos="fade-right" data-aos-easing="ease" data-aos-duration="800"
+          data-aos-delay="600">
+          <img src="images/icon-candle.svg" alt="vela" />
+          <h3>Atendimento 24h</h3>
+        </li>
+      </ul>
+    </article>
+  </div>
+</section>
+<!-- Serviços -->
+<section class="services" id="servicos">
+  <div class="container">
+    <header class="services__header">
+      <h2 class="line space-stack-xl">Serviços</h2>
+    </header>
+
+    <article class="services__desc" data-aos="fade-up" data-aos-easing="ease" data-aos-duration="800">
+      <header class="services__desc__head card-m">
+        <img src="images/icon-leaf-doura.svg" alt="Ícone Folha" />
+        <h3>Translado</h3>
+      </header>
+      <p class="services__desc__text card-m">
+        O mais confortável para você e sua família é não precisar se
+        preocupar com burocracia em relação ao funeral . Nossa equipe é
+        treinada para ser a mais atenciosa neste momento difícil.
+      </p>
+    </article>
+
+    <article class="services__desc" data-aos="fade-up" data-aos-easing="ease" data-aos-duration="800"
+      data-aos-delay="200">
+      <header class="services__desc__head card-m">
+        <img src="images/icon-leaf-doura.svg" alt="Ícone Folha" />
+        <h3>Cremação</h3>
+      </header>
+      <p class="services__desc__text card-m">
+        O mais confortável para você e sua família é não precisar se
+        preocupar com burocracia em relação ao funeral . Nossa equipe é
+        treinada para ser a mais atenciosa neste momento difícil.
+      </p>
+    </article>
+
+    <article class="services__desc" data-aos="fade-up" data-aos-easing="ease" data-aos-duration="800"
+      data-aos-delay="400">
+      <header class="services__desc__head card-m">
+        <img src="images/icon-leaf-doura.svg" alt="Ícone Folha" />
+        <h3>Documentação</h3>
+      </header>
+      <p class="services__desc__text card-m">
+        O mais confortável para você e sua família é não precisar se
+        preocupar com burocracia em relação ao funeral . Nossa equipe é
+        treinada para ser a mais atenciosa neste momento difícil.
+      </p>
+    </article>
+
+    <article class="services__desc" data-aos="fade-up" data-aos-easing="ease" data-aos-duration="800"
+      data-aos-delay="600">
+      <header class="services__desc__head card-m">
+        <img src="images/icon-leaf-doura.svg" alt="Ícone Folha" />
+        <h3>Decoração</h3>
+      </header>
+      <p class="services__desc__text card-m">
+        O mais confortável para você e sua família é não precisar se
+        preocupar com burocracia em relação ao funeral . Nossa equipe é
+        treinada para ser a mais atenciosa neste momento difícil.
+      </p>
+    </article>
+  </div>
+</section>
+
+<!-- Caixoes -->
+<div id="caixoes" style="margin: 30px;">
+  <h2 class="line space-stack-xl">Caixoes</h2>
+
+  <div id="containerCaixoes"></div>
+
+</div>
+<!-- Depoimentos -->
+
+
+<section class="depositions default-section">
+  <div class="container">
+    <header class="quote space-stack-xl depositions__header">
+      <h2 class="line">
+        Depoimentos
+        <img src="images/quote.svg" alt="Aspas" />
+      </h2>
+    </header>
+
+    <blockquote class="depositions__people">
+      <img src="images/dep-1.png" alt="Foto Maria Algusta" />
+      <p class="type-color-1 size-text-1">
+        “Tive a melhor assistênca possível no facelimento do meu pai. Eles
+        me ajudaram a cuidar de toda a burocracia relacionada ao funeral e
+        não tive perocupações com relação a isso depois”
+      </p>
+      <cite class="size-text-3">- Maria Algusta, RJ</cite>
+    </blockquote>
+
+    <blockquote class="depositions__people">
+      <img src="images/dep-2.png" alt="Foto Fernado Buraca" />
+      <p class="type-color-1 size-text-1">
+        "Fiz um plano para minha avó e foi uma excelente escolha. Toda a cerimônia foi sem complicações e tudo de
+        forma rápida e descomplicada.
+        Recomendo para qualquer um que busque um plano funerário".
+      </p>
+      <cite class="size-text-3">- Fernando Buraca, MG</cite>
+    </blockquote>
+  </div>
+</section>
+<!-- Planos -->
+<section class="plans default-section" id="planos">
+  <div class="container">
+    <header class="plans__header">
+      <h2 class="line">Planos</h2>
+    </header>
+
+    <article class="plans__features">
+      <header class="plans__features__head r-card-l text-center">
+        <h3>Necessidade</h3>
+      </header>
+      <ul class="plans__list r-card-l">
+        <li>Enterro</li>
+        <li>Cremação</li>
+        <li>Translado</li>
+        <li>Até 2 pessoas</li>
+        <li>Desconto em serviços</li>
+      </ul>
+      <div class="plans__action r-card-l">
+        <h4 class="text-center space-stack-l">
+          R$ <span class="text-color-base">34,80</span>/mês
+        </h4>
+        <a href="planos.html?link=necessidade" class="btn btn--primary">Escolher</a>
+      </div>
+    </article>
+
+    <article class="plans__features">
+      <header class="plans__features__head r-card-l text-center">
+        <h3>Cortesia</h3>
+      </header>
+      <ul class="plans__list r-card-l">
+        <li>Enterro</li>
+        <li>Cremação</li>
+        <li>Translado</li>
+        <li>Até 5 pessoas</li>
+        <li>Desconto em serviços</li>
+      </ul>
+      <div class="plans__action r-card-l">
+        <h4 class="text-center space-stack-l">
+          R$ <span class="text-color-base">45,80</span>/mês
+        </h4>
+        <a href="planos.html?link=cortesia" class="btn btn--primary">Escolher</a>
+      </div>
+    </article>
+  </div>
+</section>
+<!-- Google Maps -->
+<section class="mapa container bigger-section" id="contato">
+  <header class="map__contact">
+    <h2 class="full-width line space-stack-xl">Contato & Localização</h2>
+  </header>
+  <div class="map">
+    <div style="overflow: hidden; width: px; position: relative;">
+      <iframe width="" height="600"
+        src="https://maps.google.com/maps?width=&amp;height=&amp;hl=en&amp;q=Rio%20de%20Janeiro+(Onde%20Estamos)&amp;ie=UTF8&amp;t=&amp;z=10&amp;iwloc=B&amp;output=embed"
+        frameborder="0" scrolling="no" marginheight="0" marginwidth="0"></iframe>
+      <div style="
+              position: absolute;
+              width: 100%;
+              left: 0;
+              right: 0;
+              margin-left: auto;
+              margin-right: auto;
+              color: #000;
+              text-align: center;
+            ">
+        <small style="font-size: 2px; background: #fff;">Powered by
+          <a href="https://embedgooglemaps.com/it/">embedgooglemaps IT</a> &
+          <a href="http://www.stedentrippers.nl/berlijn.html">Stedentrippers(*)</a></small>
+      </div>
+      <style>
+        #gmap_canvas img {
+          max-width: none !important;
+          background: none !important;
+        }
+      </style>
+    </div>
+  </div>
+
+  <div class="contact__form shadow-element">
+    <div class="contact__title">
+      <h3 class="text-center line space-stack-l">Entre em contato</h3>
+    </div>
+    <form class="footer__form">
+      <label for="nome" class="type-color-1">Nome:</label>
+      <input class="form__component--dark space-stack-m" type="text" placeholder="Insira seu nome" id="nome" />
+      <label for="email" class="type-color-1">E-mail:</label>
+      <input class="form__component--dark space-stack-m" type="email" placeholder="Digite seu e-mail" id="email" />
+      <label for="message" class="type-color-1">Mensagem:</label>
+      <textarea class="form__component--dark space-stack-xl" id="message" rows="5"
+        placeholder="Digite sua mensagem"></textarea>
+
+      <input type="submit" value="Enviar" class="btn btn--primary" />
+    </form>
+  </div>
+</section>
+<footer class="footer default-section">
+  <div style="flex-direction: row-reverse;justify-content: space-around;flex-wrap: wrap-reverse;" class="container">
+    <div style="display: flex; flex-direction: column;align-items: center;" class="footer__content">
+      <img style="background-color: #000000ad;" src="./images/logodescansoeterno-removebg-preview.png"
+        alt="Funerária Fênix Logotipo" />
+      <label style="font-size: xx-large;
+        text-align: center;">
+        2023 © Funeraria Descanco Eterno. Todos os direitos reservados.
+      </label>
+    </div>
+    <div style="    display: flex;
+      flex-direction: column;
+      align-items: center;
+      margin: 40px 0;">
+      <h3>Formas de Pagamento :</h3>
+      <img style="max-width: 50%;" src="./images/pagamentos-1024x289.png" alt="">
+    </div>
+
+  </div>
+</footer>
+
+
+<script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+<script>
+  window.addEventListener("load", function () {
+    AOS.init();
+  });
+</script>
+<script src="js/main.js"></script>
+</body>
+
+</html>

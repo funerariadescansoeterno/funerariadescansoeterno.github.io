@@ -1,0 +1,103 @@
+.card-s {
+    @include spaceInsert($space-s);
+}
+
+.card-m {
+    @include spaceInsert($space-m);
+}
+
+.card-l {
+    @include spaceInsert($space-l);
+}
+
+.card-xl {
+    @include spaceInsert($space-xl);
+}
+
+.card-xxl {
+    @include spaceInsert($space-xxl);
+}
+
+// Card responsivo
+.r-card-m {
+    @include spaceInsert($space-s);
+}
+
+@media (min-width: $bp-2){
+    .r-card-l {
+        @include spaceInsert($space-m);
+    }
+}
+
+.r-card-l {
+    @include spaceInsert($space-m);
+}
+
+@media (min-width: $bp-2){
+    .r-card-l {
+        @include spaceInsert($space-l)
+    }
+}
+
+.r-card-xl {
+    @include spaceInsert($space-l);
+}
+
+@media (min-width: $bp-2){
+    .r-card-xl {
+        @include spaceInsert($space-xl);
+    }
+}
+
+.r-card-xxl {
+    @include spaceInsert($space-xl);
+}
+
+@media (min-width: $bp-2){
+    .r-card-xxl {
+        @include spaceInsert($space-xxl);
+    }
+}
+
+// Cards Squish
+.card-squish-s {
+    @include insertSquish($space-s);
+}
+
+.card-squish-m {
+    @include insertSquish($space-m);
+}
+
+.card-squish-l {
+    @include insertSquish($space-s);
+}
+
+.card-squish-xl {
+    @include insertSquish($space-xl);
+}
+
+.card-squish-xxl {
+    @include insertSquish($space-xxl);
+}
+
+// Card Stretch
+
+.card-stretch-s {
+    @include insertStretch($space-s);
+}
+
+.card-stretch-m {
+    @include insertSquish($space-m);
+}
+
+.card-stretch-l {
+    @include insertSquish($space-l);
+}
+
+.card-stretch-xl {
+    @include insertSquish($space-s);
+}
+
+.card-stretch-xxl {
+    @include insertSquish($space-xxl);
+}

@@ -1,0 +1,11 @@
+code {
+    background-color: $support-color-1;
+    color: #c7254e;
+    padding: $space-xs;
+    font-family: monospace;
+}
+
+pre > code {
+    display: block;
+    padding: $space-s;
+}

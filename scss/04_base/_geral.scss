@@ -1,0 +1,19 @@
+* {
+    box-sizing: border-box;
+}
+
+html {
+    font-size: $context+px;
+}
+
+body {
+    font-size: convertToRem($size-text-2);
+    line-height: $text-lh;
+    font-weight: 400;
+    font-family: $typeface-2;
+    color: $type-color-2;
+}
+
+img {
+    max-width: 100%;
+}

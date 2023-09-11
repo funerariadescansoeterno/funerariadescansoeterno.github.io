@@ -1,0 +1,25 @@
+ol,
+ul {
+    list-style-position: inside;
+    padding-left: 0;
+}
+
+ul {
+   list-style: disc;
+}
+
+ol {
+    list-style: decimal;
+}
+
+ul ul,
+ul ol,
+ol ol,
+ol ul {
+    padding-left: $space-l;
+    margin-top: $space-s;
+}
+
+li {
+    margin-bottom: $space-s;
+}

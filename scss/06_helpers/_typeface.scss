@@ -1,0 +1,59 @@
+.text-center {
+  text-align: center !important;
+}
+
+.text-left {
+  text-align: left !important;
+}
+
+.text-right {
+  text-align: right !important;
+}
+// Escala de texto
+.size-text-1 {
+  font-size: convertToRem($size-text-1) !important;
+}
+
+.size-text-2 {
+  font-size: convertToRem($size-text-2) !important;
+}
+
+.size-text-3 {
+  font-size: convertToRem($size-text-3) !important;
+}
+
+// Escala de título
+.size-title-1 {
+  font-size: convertToRem($size-title-1) !important;
+}
+
+.size-title-2 {
+  font-size: convertToRem($size-title-2) !important;
+}
+
+.size-title-3 {
+  font-size: convertToRem($size-title-3) !important;
+}
+
+.size-title-4 {
+  font-size: convertToRem($size-title-4) !important;
+}
+
+.size-title-5 {
+  font-size: convertToRem($size-title-5) !important;
+}
+
+.size-title-6 {
+  font-size: convertToRem($size-title-6) !important;
+}
+
+// Maiúscula
+.text-uppercase {
+  text-transform: !important;
+}
+
+// Cores do texto
+
+.text-color-base {
+  color: $base-color !important;
+}
